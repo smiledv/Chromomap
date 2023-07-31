@@ -1,0 +1,42 @@
+#install.packages("chromoMap")
+library(chromoMap)
+setwd("C:/Users/faara/OneDrive/Desktop")
+
+chromoMap("cattle_chr1.txt","anno_BMA.txt",
+          data_based_color_map = T,
+          data_type = "categorical",
+          data_colors = list(c("green","blue")))
+
+chromoMap("cattle_chr2.txt","anno_BMA.txt",
+          data_based_color_map = T,
+          data_type = "categorical",
+          data_colors = list(c("blue","green")),
+          canvas_width = 600,
+          chr_length = 2)
+
+
+chromoMap("cattle_chr1.txt","anno_BRG.txt",
+          data_based_color_map = T,
+          data_type = "categorical",
+          data_colors = list(c("green","blue")))
+
+chromoMap("cattle_chr2.txt","anno_BRG.txt",
+          data_based_color_map = T,
+          data_type = "categorical",
+          data_colors = list(c("green","blue")),
+          canvas_width = 600,
+          chr_length = 2)
+
+
+chromoMap("cattle_chr1.txt","anno_SGT.txt",
+          data_based_color_map = T,
+          data_type = "categorical",
+          data_colors = list(c("green","blue")))
+
+chromoMap("cattle_chr2.txt","anno_SGT.txt",
+          data_based_color_map = T,
+          data_type = "categorical",
+          data_colors = list(c("blue","green")),
+          canvas_width = 600,
+          chr_length = 2)
+
